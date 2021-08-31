@@ -1,0 +1,7 @@
+table_set_default ipv4_lpm drop
+table_add tbl_setFlowID set_flowID 10.0.1.1/32 => 1
+table_add ipv4_lpm ipv4_forward 1 => 00:00:00:00:01:01 1
+table_add tbl_setFlowID set_flowID 10.0.1.1/32 => 11
+table_add ipv4_lpm ipv4_forward 11 => 00:00:00:00:01:01 1
+table_add tbl_toController ipv4_forward_toController 10.0.1.1 => 00:00:00:00:01:01 1
+

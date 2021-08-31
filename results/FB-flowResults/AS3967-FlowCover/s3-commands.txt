@@ -1,0 +1,17 @@
+table_add tbl_setFlowID set_flowID 10.0.3.3 => 0  
+table_add ipv4_lpm ipv4_forward 0 => 00:00:00:00:03:03 1  
+table_add tbl_setFlowID set_flowID 10.0.41.41 => 73  
+table_add ipv4_lpm ipv4_forward 73 => 00:00:00:29:29:00 2 
+table_add tbl_setFlowID set_flowID 10.0.48.48 => 33  
+table_add ipv4_lpm ipv4_forward 33 => 00:00:00:30:30:00 7 
+table_add tbl_setFlowID set_flowID 10.0.70.70 => 83  
+table_add ipv4_lpm ipv4_forward 83 => 00:00:00:46:46:00 3 
+table_add tbl_setFlowID set_flowID 10.0.70.70 => 44  
+table_add ipv4_lpm ipv4_forward 44 => 00:00:00:46:46:00 3 
+table_add tbl_setFlowID set_flowID 10.0.75.75 => 94  
+table_add ipv4_lpm ipv4_forward 94 => 00:00:00:4b:4b:00 7 
+table_add tbl_setFlowID set_flowID 10.0.16.16 => 45  
+table_add ipv4_lpm ipv4_forward 45 => 00:00:00:10:10:00 6 
+table_add tbl_setFlowID set_flowID 10.0.81.81 => 95  
+table_add ipv4_lpm ipv4_forward 95 => 00:00:00:51:51:00 7 
+table_add tbl_toController ipv4_forward_toController 10.0.1.1 => 00:00:00:01:01:00 2 

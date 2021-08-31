@@ -1,0 +1,34 @@
+table_add tbl_setFlowID set_flowID 10.0.11.11 => 0  
+table_add ipv4_lpm ipv4_forward 0 => 00:00:00:00:0b:0b 1  
+table_add tbl_setFlowID set_flowID 10.0.30.30 => 56  
+table_add ipv4_lpm ipv4_forward 56 => 00:00:00:1e:1e:00 7 
+table_add tbl_setFlowID set_flowID 10.0.20.20 => 17  
+table_add ipv4_lpm ipv4_forward 17 => 00:00:00:14:14:00 7 
+table_add tbl_setFlowID set_flowID 10.0.35.35 => 67  
+table_add ipv4_lpm ipv4_forward 67 => 00:00:00:23:23:00 10 
+table_add tbl_setFlowID set_flowID 10.0.8.8 => 21  
+table_add ipv4_lpm ipv4_forward 21 => 00:00:00:08:08:00 3 
+table_add tbl_setFlowID set_flowID 10.0.14.14 => 71  
+table_add ipv4_lpm ipv4_forward 71 => 00:00:00:0e:0e:00 5 
+table_add tbl_setFlowID set_flowID 10.0.22.22 => 32  
+table_add ipv4_lpm ipv4_forward 32 => 00:00:00:16:16:00 7 
+table_add tbl_setFlowID set_flowID 10.0.74.74 => 82  
+table_add ipv4_lpm ipv4_forward 82 => 00:00:00:4a:4a:00 5 
+table_add tbl_setFlowID set_flowID 10.0.17.17 => 87  
+table_add ipv4_lpm ipv4_forward 87 => 00:00:00:11:11:00 2 
+table_add tbl_setFlowID set_flowID 10.0.12.12 => 38  
+table_add ipv4_lpm ipv4_forward 38 => 00:00:00:0c:0c:00 3 
+table_add tbl_setFlowID set_flowID 10.0.43.43 => 88  
+table_add ipv4_lpm ipv4_forward 88 => 00:00:00:2b:2b:00 10 
+table_add tbl_setFlowID set_flowID 10.0.43.43 => 41  
+table_add ipv4_lpm ipv4_forward 41 => 00:00:00:2b:2b:00 8 
+table_add tbl_setFlowID set_flowID 10.0.48.48 => 91  
+table_add ipv4_lpm ipv4_forward 91 => 00:00:00:30:30:00 3 
+table_set_default ipv4_lpm drop
+mirroring_add 11 8
+register_write bytesRemaining 0 0
+register_write index 0 0
+register_write MyEgress.sink_reg 0 167772417
+register_write MyEgress.pkt_thd_reg 0 800
+table_add MyEgress.generate_clone MyEgress.do_clone_e2e 0 
+table_add tbl_toController ipv4_forward_toController 10.0.1.1 => 00:00:00:01:01:00 8 
