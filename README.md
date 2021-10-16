@@ -39,19 +39,14 @@ Mininet. Then, it uses the s#-commands.txt to insert the initial forwarding rule
 top of P4 switches. Now, the code is to run the measurements. 
 
 ## Publication
-```
-P4Flow: Monitoring Traffic Flows with Programmable Networks
-Habib Mostafaei, Shafi Afridi
-IEEE COMML 2021
-```
 ```bibtex
 @article{P4Flow-COMML21,
  author={H. Mostafaei and S. Afridi},
  title={{P4Flow}: Monitoring Traffic Flows with Programmable Networks},
  journal={IEEE Communications Letters},
  year={2021},
- volume={},
- number={},
- note={Impact factor: 3.436, to appear}
+ volume={22},
+ number={11},
+ note={Impact factor: 3.436}
 }
 ```
