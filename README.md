@@ -54,4 +54,3 @@ IEEE COMML 2021
  note={Impact factor: 3.436, to appear}
 }
 ```
-```
