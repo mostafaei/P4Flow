@@ -43,7 +43,7 @@ top of P4 switches. Now, the code is to run the measurements.
 P4Flow: Monitoring Traffic Flows with Programmable Networks
 Habib Mostafaei, Shafi Afridi
 IEEE COMML 2021
-
+```bibtex
 @article{P4Flow-COMML21,
  author={H. Mostafaei and S. Afridi},
  title={{P4Flow}: Monitoring Traffic Flows with Programmable Networks},
@@ -53,4 +53,5 @@ IEEE COMML 2021
  number={},
  note={Impact factor: 3.436, to appear}
 }
+```
 ```
