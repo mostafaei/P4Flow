@@ -47,6 +47,8 @@ top of P4 switches. Now, the code is to run the measurements.
  year={2021},
  volume={22},
  number={11},
+ pages={3546-3550},
+ doi={10.1109/LCOMM.2021.3109793},
  note={Impact factor: 3.436}
 }
 ```
